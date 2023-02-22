@@ -1,0 +1,610 @@
+@import "font-sizes.css";
+
+:root {
+    --sm: 576px;
+    --md: 768px;
+    --lg: 1024px;
+
+    --box-shadow: rgba(207, 207, 207, 0.75);
+    /* colors */
+
+    --green-1: #3aab91;
+    --alga-green: #70BAA4;
+    --light-alga-green: #add4c7;
+    --light-green: #85c33e;
+    --highlight-green: #d8e592;
+    --black-green: #313940;
+    --grey-green: #515c62;
+    --header-blue: #0086b7;
+    --white: #fff;
+    --mild-white: #fefdf6;
+    --black: #000;
+
+    --dark-paled-black: #221e1f;
+    --grey: #647882;
+    --light-grey: #939598;
+    --dark-grey: #6d6e71;
+    --grey-blue: #e1eef4;
+    --charcoal-grey: #333c42;
+    --lightish-grey: #647984;
+
+    --dark-red: #ef5053;
+    --brown: #c93146;
+    --orange-highlight: #f48047;
+
+    --top-yellow: #ffe94d;
+    --dark-yellow: #ffde4e;
+    --lemon-yellow: #d8e373;
+    --mild-yellow: #c6da55;
+    --yellow-highlight: #fff101;
+
+    --blue: #183181;
+    --thick-blue: #13367b;
+    --dark-moderate-blue: #3a479d;
+    --dark-blue: #3c479d;
+    --dark-blue-1: #173080;
+    --blue-background: #3b479d;
+    --strong-blue: #007ec5;
+    --blue-1: #2ea1b6;
+    --blue-2: #29ABB9;
+    --light-blue-1: #00adee;
+    --mild-blue-1: #91A7B3;
+    --skyBlue: #17a3cf;
+    --sky-blue: #d1effc;
+    --skyblue-1: #00a2df;
+    --light-blue: #b9e2e3;
+    --lighten-blue: #d4effb;
+    --mild-blue: #ebf6f6;
+    --bluish-cyan: #0090bc;
+    --light-blue-background: #e4e4f2;
+
+    --pink: #de1b79;
+    --dark-pink: #a40140;
+    --strong-pink: #e02f81;
+    --pink1: #e987a5;
+    --light-pink: #f0b0c5;
+    --shadow-pink: #f6cbd6;
+    --mild-pink: #f3c3d3;
+    --mild-pink-1: #fdf7fa;
+    --magenta-1: #be198d;
+
+    --magenta: #9a248f;
+    --purple: #676ba6;
+    --purple1: #4a478d;
+    --mild-purple: #bbb6d2;
+    --dark-purple: #490386;
+    --light-purple: #8c62aa;
+    --purple-blue: #56429a;
+    --purple-bg: #c8bfe7;
+    --purple-color: #3C479D;
+}
+
+@font-face {
+    font-family: "Jaldi-Bold";
+    src: url("../fonts/Jaldi-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Modak-Regular";
+    src: url("../fonts/Modak-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Caveat-Bold";
+    src: url("../fonts/Caveat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url("../fonts/Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: "NotoSansJP-Black";
+    src: url("../fonts/NotoSansJP-Black.otf");
+}
+
+@font-face {
+    font-family: "NotoSans-Black";
+    src: url("../fonts/NotoSans-Black.ttf");
+}
+
+@font-face {
+    font-family: "NotoSans-Bold";
+    src: url("../fonts/NotoSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "NotoSans-Medium";
+    src: url("../fonts/NotoSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url("../fonts/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu-Mediumitalic";
+    src: url("../fonts/Ubuntu-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu-Medium";
+    src: url("../fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Barlow-Black";
+    src: url("../fonts/Barlow-Black.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "PT_Serif-Regular";
+    src: url("../fonts/PT_Serif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PT_Serif-Bold";
+    src: url("../fonts/PTSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoSlab-Black";
+    src: url("../fonts/RobotoSlab-Black.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Medium";
+    src: url("../fonts/OpenSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Italic";
+    src: url("../fonts/Montserrat-SemiBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Black";
+    src: url("../fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: "Italic-Montserrat";
+    src: url("../fonts/Montserrat-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Stone-informal-std";
+    src: url("../fonts/StoneInformalStd-Medium.otf");
+}
+
+@font-face {
+    font-family: "LatoStd";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Armata-Regular";
+    src: url("../fonts/Armata-Regular.ttf");
+}
+
+.Armata-Regular {
+    font-family: "Armata-Regular";
+}
+
+.Modak-Regular {
+    font-family: "Modak-Regular";
+}
+
+.Jaldi-Bold {
+    font-family: "Jaldi-Bold";
+}
+
+.Oswald-Bold {
+    font-family: "Oswald-Bold";
+}
+
+.NotoSansJP-Black {
+    font-family: "NotoSansJP-Black";
+}
+
+.NotoSans-Black {
+    font-family: "NotoSans-Black";
+}
+
+.NotoSans-Bold {
+    font-family: "NotoSans-Bold";
+}
+
+.NotoSans-Medium {
+    font-family: "NotoSans-Medium";
+}
+
+.Ubuntu-Bold {
+    font-family: "Ubuntu-Bold";
+}
+
+.Ubuntu-Mediumitalic {
+    font-family: "Ubuntu-Mediumitalic";
+}
+
+.Ubuntu-Medium {
+    font-family: "Ubuntu-Medium";
+}
+
+.Barlow-Black {
+    font-family: "Barlow-Black";
+}
+
+.Roboto-Bold {
+    font-family: "Roboto-Bold";
+}
+
+.RobotoSlab-Black {
+    font-family: "RobotoSlab-Black";
+}
+
+.PT_Serif-Regular {
+    font-family: "PT_Serif-Regular";
+}
+
+.PT_Serif-Bold {
+    font-family: "PT_Serif-Bold";
+}
+
+.Caveat-Bold {
+    font-family: "Caveat-Bold";
+}
+
+.OpenSans-Medium {
+    font-family: "OpenSans-Medium";
+}
+
+.OpenSans-Light {
+    font-family: "OpenSans-Light";
+}
+
+.Montserrat-Regular {
+    font-family: "Montserrat-Regular";
+}
+
+.Montserrat-Italic {
+    font-family: "Montserrat-Italic";
+}
+
+.Montserrat {
+    font-family: "Montserrat";
+}
+
+.Montserrat-Black {
+    font-family: "Montserrat-Black";
+}
+
+.Italic-Montserrat {
+    font-family: "Italic-Montserrat";
+}
+
+.stone-informal-std-font-family {
+    font-family: "Stone-informal-std";
+}
+
+.LatoStd {
+    font-family: "LatoStd";
+}
+
+.list {
+    font-family: "Montserrat-Regular";
+    margin: 0em 0em 0em 1.15em;
+    text-indent: -1.15em;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    overflow-x: hidden;
+    margin: 0 auto;
+    max-width: 75rem;
+}
+
+.screen-reader-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /* added line */
+    border: 0;
+}
+
+.page-header {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.top-mouse {
+    background-color: var(--white);
+    border-radius: 4px;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 8px;
+    position: relative;
+    top: 70px;
+    left: 10px;
+}
+
+.page-main-content-right {
+    background-color: var(--mild-white);
+    margin: 1rem 0 1rem 48px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.image-caption {
+    width: 90%;
+    padding-left: 8px;
+    border-left: dotted var(--light-blue);
+    margin-top: 0.5rem !important;
+}
+
+.check-in-box {
+    border: 2px solid var(--light-pink);
+    height: fit-content;
+    margin: 1rem 0 1rem 1rem;
+    position: relative;
+    background-color: var(--white);
+}
+
+.check-in-box p {
+    margin: 6px 0px !important;
+}
+
+.check-in-box li {
+    text-indent: 0px;
+}
+
+.check-in-box ol {
+    padding-left: 0;
+    margin-left: 0.3rem;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.check-in-box ol>li::marker {
+    font-weight: bold;
+}
+
+.check-in-list {
+    font-family: "Montserrat-Regular";
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+}
+
+.check-in-list p {
+    margin: 0px !important;
+    margin-bottom: 8px !important;
+}
+
+.check-icon {
+    width: 2.125rem;
+    position: absolute;
+    top: -0.4rem;
+    left: -1rem;
+    z-index: 1;
+}
+
+.box-top {
+    color: var(--white);
+    display: flex;
+    align-items: flex-start;
+}
+
+.box-heading {
+    background-color: var(--pink);
+    padding: 0 1rem;
+    margin: 0px;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.box-heading p {
+    letter-spacing: 1px;
+}
+
+.checkin-mouse-img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 8px;
+}
+
+.glossary-container {
+    background-color: var(--white);
+    margin-left: 48px;
+    display: flex;
+    justify-content: start;
+    border: 2px solid var(--purple-color);
+    max-width: fit-content;
+}
+
+.glossary-container .text-content {
+    padding: 4px 8px;
+}
+
+.glossary-title-box-parent {
+    background-color: var(--purple-color);
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    height: fit-content;
+    padding: 0px 2px 2px 0px;
+}
+
+.glossary-title-box {
+    background-color: var(--purple-bg);
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    height: fit-content;
+    padding: 0px 8px 2px 4px;
+    color: var(--purple-color);
+}
+
+.page-footer {
+    margin: 3rem 0 1rem 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    display: block;
+    height: fit-content;
+}
+
+.page-footer p {
+    margin-bottom: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.avatar-double {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    font-size: var(--font-17pt-doublepage);
+    font-weight: bold;
+    color: var(--white);
+    text-align: center;
+    background: var(--dark-moderate-blue);
+    position: relative;
+    flex-shrink: 0;
+}
+
+.avatar-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-footer .page-number {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2px 12px 2px 0px;
+    border-radius: 0 8px 8px 0;
+    font-weight: bold;
+    width: 80px;
+    text-align: end;
+    margin-right: 8px;
+}
+
+.page-number.right-page {
+    padding: 2px 0 2px 12px;
+    border-radius: 8px 0 0 8px;
+    text-align: start;
+    margin-right: 0;
+}
+
+.white-footer {
+    color: var(--white);
+}
+
+.right-page-footer {
+    text-align: right;
+    float: right;
+}
+
+.page-footer .unit-name {
+    font-weight: bolder;
+    margin-right: 8px;
+}
+
+.page-footer .footer-text {
+    margin-right: 8px;
+}
+
+/* Mobile devices (576px and down) */
+@media only screen and (max-width: 576px) {
+    .page-footer {
+        height: 1.375rem;
+    }
+
+    .page-footer.long-text {
+        height: fit-content;
+    }
+
+    .page-footer .page-number {
+        width: 55px;
+    }
+
+    .avatar-double {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+/* Ipad devices (768px and up) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .avatar-double {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+}
+
+/* Ipad devices (768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1152px) {
+    .avatar-double {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .page-footer {
+        height: 3.2rem;
+    }
+}
+
+@media only screen and (max-width: 1152px) {
+    .check-in-box {
+        min-width: fit-content;
+    }
+
+    .glossary-container {
+        margin-right: 8px;
+    }
+
+    .image-caption {
+        width: 95%;
+    }
+
+    .page-footer {
+        margin: 3rem 0 3rem 0;
+    }
+
+    .right-page-border {
+        border-top: 2px solid rgba(220, 220, 220);
+        padding-top: 24px;
+    }
+}

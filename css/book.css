@@ -1,0 +1,698 @@
+:root {
+  --sm: 576px;
+  --md: 768px;
+  --lg: 1024px;
+
+  --box-shadow: rgba(207, 207, 207, 0.75);
+  /* colors */
+ 
+  --green: #4f9b5d;
+  --green-1:#3AAB91;
+  --alga-green: #6CB9A4;
+  --light-alga-green:#ADD4C7;
+  --dark-green: #009340;
+  --light-green: #85C33E;
+  --highlight-green: #D8E592;
+  --black-green: #313940;
+  --grey-green: #515C62;
+  --header-blue: #0086B7;
+  
+  --grey-box-bg: #f2f1ee;
+
+  --light-orange-highlight: #fedab3;
+
+  --white: #fff;
+  --mild-white: #FDFDF6;
+  --seashell: #fdfcfb;
+
+  --black: #000;
+  --light-black: rgba(93, 24, 24, 0.3);
+  --grey: #647882;
+  --light-grey: #939598;
+  --dark-grey: #6d6e71;
+  --grey-blue: #E1EEF4;
+  --box-shadow: #6F767D;
+ 
+  --red: #d1232a;
+  --dark-red: #EF5053;
+  --red-color: #E82541;
+  --brown: #C93146;
+
+  --orange: #f7941e;
+  --orange-highlight: #F48047;
+  
+  --yellow: #ffd402;
+  --top-yellow: #ffe94d;
+  --dark-yellow: #FFDE4E;
+  --lemon-yellow: #d8e373;
+  --mild-yellow: #c6da55;
+  --yellow-highlight: #FFF101;
+
+  --blue: #183181;
+  --blue1: #0071bb;
+  --thick-blue:#13367B;
+  --dark-moderate-blue: #3a479d;
+  --dark-blue: #3c479d;
+  --dark-blue-1: #173080;
+  --blue-background: #3b479d;
+  --dark-blue-2: #004663;
+  --strong-blue: #007ec5;
+  --blue-1: #2ea1b6;
+  --blue-2: #2eaab7;
+  --light-blue-1: #00adee;
+  --mild-blue-1: #91a6b2;
+  --skyBlue: #17A3CF;
+  --sky-blue: #d1effc;
+  --skyblue-1: #00A2DF;
+  --light-blue: #b9e2e3;
+  --lighten-blue: #D4EFFB;
+  --mild-blue: #ebf6f6;
+  
+ 
+  --pink: #de1b79;
+  --dark-pink: #A40140;
+  --strong-pink: #E02F81;
+  --pink1: #e987a5;
+  --light-pink: #F0B0C5;
+  --mild-pink: #F3C3D3;
+  --mild-pink-1: #FDF7FA;
+  --magenta-1 :#BE198D;
+
+  --magenta: #9a248f;
+  --purple: #676ba6;
+  --purple1: #4A478D;
+  --mild-purple: #bbb6d2;
+  --dark-purple: #490386;
+  --light-purple: #8c62aa;
+  --purple-blue: #56429A;
+  --purple-bg: #c8bfe7;
+  --purple-color: #4d6a78;
+
+  /* font-sizes 1.1 */
+  --font-10pt-doublepage: 0.7rem;
+  --font-11pt-doublepage: 0.75rem;
+  --font-12pt-doublepage: 0.8rem;
+  --font-13pt-doublepage: 0.9rem;
+  --font-14pt-doublepage: 1rem;
+  --font-19pt-doublepage: 1.3rem;
+  --font-20pt-doublepage: 1.375rem;
+  --font-21pt-doublepage: 1.4rem;
+  --font-25pt-doublepage: 1.7rem;
+  --font-32pt-doublepage: 2.2rem;
+  --font-41pt-doublepage: 2.8rem;
+  --font-80pt-doublepage: 5.6rem;
+}
+
+
+
+@font-face {
+  font-family: "Jaldi-Bold";
+  src: url("../fonts/Jaldi-Bold.ttf");
+}
+@font-face {
+  font-family: "Modak-Regular";
+  src: url("../fonts/Modak-Regular.ttf");
+}
+@font-face {
+  font-family: "Caveat-Bold";
+  src: url("../fonts/Caveat-Bold.ttf");
+}
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("../fonts/Oswald-Bold.ttf");
+}
+@font-face {
+  font-family: "NotoSansJP-Black";
+  src: url("../fonts/NotoSansJP-Black.otf");
+}
+@font-face {
+  font-family: "NotoSans-Black";
+  src: url("../fonts/NotoSans-Black.ttf");
+}
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("../fonts/NotoSans-Bold.ttf");
+}
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url("../fonts/NotoSans-Medium.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("../fonts/Ubuntu-Bold.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-Mediumitalic";
+  src: url("../fonts/Ubuntu-MediumItalic.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url("../fonts/Ubuntu-Medium.ttf");
+}
+@font-face {
+  font-family: "Barlow-Black";
+  src: url("../fonts/Barlow-Black.ttf");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "PT_Serif-Regular";
+  src: url("../fonts/PT_Serif-Regular.ttf");
+}
+@font-face {
+  font-family: "PT_Serif-Bold";
+  src: url("../fonts/PTSerif-Bold.ttf");
+}
+@font-face {
+  font-family: "RobotoSlab-Black";
+  src: url("../fonts/RobotoSlab-Black.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url("../fonts/OpenSans-Medium.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Italic";
+  src: url("../fonts/Montserrat-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("../fonts/Montserrat-Black.ttf");
+}
+@font-face {
+  font-family: "Italic-Montserrat";
+  src: url("../fonts/Montserrat-Italic.ttf");
+}
+@font-face {
+  font-family: "Stone-informal-std";
+  src: url("../fonts/StoneInformalStd-Medium.otf");
+}
+@font-face {
+  font-family: "LatoStd";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+.Modak-Regular {
+  font-family: "Modak-Regular";
+}
+.Jaldi-Bold {
+  font-family: "Jaldi-Bold";
+}
+.Oswald-Bold {
+  font-family: "Oswald-Bold";
+}
+.NotoSansJP-Black {
+  font-family: "NotoSansJP-Black";
+}
+.NotoSans-Black {
+  font-family: "NotoSans-Black";
+}
+.NotoSans-Bold {
+  font-family: "NotoSans-Bold";
+}
+.NotoSans-Medium {
+  font-family: "NotoSans-Medium";
+}
+.Ubuntu-Bold {
+  font-family: "Ubuntu-Bold";
+}
+.Ubuntu-Mediumitalic{
+  font-family: "Ubuntu-Mediumitalic";
+}
+.Ubuntu-Medium {
+  font-family: "Ubuntu-Medium";
+}
+.Barlow-Black {
+  font-family: "Barlow-Black";
+}
+.Roboto-Bold{
+  font-family: "Roboto-Bold";
+}
+.RobotoSlab-Black {
+  font-family: "RobotoSlab-Black";
+}
+.PT_Serif-Regular {
+  font-family: "PT_Serif-Regular";
+}
+
+.PT_Serif-Bold {
+  font-family: "PT_Serif-Bold";
+}
+.Caveat-Bold {
+  font-family: "Caveat-Bold";
+}
+.OpenSans-Medium {
+  font-family: "OpenSans-Medium";
+}
+.OpenSans-Light {
+  font-family: "OpenSans-Light";
+}
+.Montserrat-Regular {
+  font-family: "Montserrat-Regular";
+}
+.Montserrat-Italic {
+  font-family: "Montserrat-Italic";
+}
+.Montserrat {
+  font-family: "Montserrat";
+}
+.Montserrat-Black {
+  font-family: "Montserrat-Black";
+}
+.Italic-Montserrat {
+  font-family: "Italic-Montserrat";
+}
+.stone-informal-std-font-family {
+  font-family: "Stone-informal-std";
+}
+.LatoStd {
+  font-family: "LatoStd";
+}
+
+
+.list {
+  font-family: "Montserrat-Regular";
+  margin: 0em 0em 0em 1.15em;
+  text-indent: -1.15em;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  overflow-x: hidden;
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
+article.single-page {
+  max-width: 64rem;
+}
+
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+.page-header {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.page-footer {
+  margin: 3rem 0 1rem 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  display: block;
+  height: fit-content;
+}
+
+.page-footer p {
+  margin-bottom: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+.avatar {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  font-size: var(--font-17pt);
+  font-weight: bold;
+  color: var(--white);
+  text-align: center;
+  background: var(--dark-moderate-blue);
+  position: relative;
+  flex-shrink: 0;
+}
+.avatar-double {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  font-size: var(--font-17pt-doublepage);
+  font-weight: bold;
+  color: var(--white);
+  text-align: center;
+  background: var(--dark-moderate-blue);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-box {
+  width: fit-content;
+  background: var(--strong-blue);
+  border-radius: 10px;
+  clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  height: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 1.75rem;
+}
+
+.title-box-content {
+  color: var(--white);
+  margin-right: 0.75rem;
+}
+.title-box-double {
+  width: fit-content;
+  background: var(--strong-blue);
+  border-radius: 10px;
+  clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  /* margin-top: 1.4rem; */
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+.title-box-purple-double {
+  width: fit-content;
+  background: var(--light-purple);
+  border-radius: 10px;
+  clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  /* margin-top: 1.4rem; */
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+.book-header {
+  margin-bottom: 3rem;
+}
+.book-header-cover {
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  color: white;
+  background-color: var(--dark-blue);
+  border-radius: 0 0 20px 0;
+  padding: 1.5rem 3rem 0.1rem 3rem;
+}
+
+.book-header-cover .text1 {
+  padding-right: 2px;
+}
+
+.book-img-header {
+  width: 100%;
+  height: 62px;
+}
+.book-img-icon-1 {
+  width: 2.2rem;
+  margin: 0px 1px 0px 1px;
+}
+.book-img-icon-2 {
+  width: 2.375rem;
+  margin: 0px 4px 0px 12px;
+}
+
+.page-footer .page-number {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0 12px 0 0px;
+  border-radius: 0 8px 8px 0;
+  font-weight: bold;
+  width: 80px;
+  text-align: end;
+  margin-right: 8px;
+}
+
+.page-number.right-page {
+  padding: 0 0 0 12px;
+  border-radius: 8px 0 0 8px;
+  text-align: start;
+  margin-right: 0;
+  float: right;
+}
+
+.right-page-footer {
+  text-align: right;
+  float: right;
+}
+.page-footer .unit-name {
+  font-weight: bolder;
+  margin-right: 8px;
+}
+
+.page-footer .footer-text {
+  margin-right: 8px;
+}
+
+.purple-text {
+  color: var(--dark-purple);
+}
+/* Mobile devices (576px and down) */
+@media only screen and (max-width: 576px) {
+  /*For font-size = 9pts,
+12 * 1 = 12
+rounding off 15.6 to nearest even number = 16px
+*/
+  :root {
+     /*1.3*/
+     --font-10pt-doublepage: 0.8rem;
+     --font-11pt-doublepage: 0.9rem;
+     --font-12pt-doublepage: 0.975rem;
+     --font-13pt-doublepage: 1rem;
+     --font-14pt-doublepage: 1.13rem;
+     --font-19pt-doublepage: 1.54rem;
+     --font-20pt-doublepage: 1.62rem;
+     --font-21pt-doublepage: 1.7rem;
+     --font-25pt-doublepage: 2rem;
+     --font-32pt-doublepage: 2.6rem;
+     --font-41pt-doublepage: 3.3rem;
+     --font-80pt-doublepage: 6.6rem;
+  }
+
+  .page-footer {
+    height: 1.375rem;
+  }
+
+  .page-footer.long-text {
+    height: fit-content;
+  }
+  .page-footer .page-number {
+    width: 55px;
+  }
+  .avatar {
+    width: 1.5625rem;
+    height: 1.5625rem;
+  }
+  .avatar-double {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .title-box {
+    padding: 0.75rem;
+    height: 1rem;
+    margin-top: -0.75rem;
+    margin-bottom: 1rem;
+  }
+  .title-box-double {
+    padding: 0.75rem;
+    /* margin-top: -0.75rem; */
+    margin-bottom: 1rem;
+  }
+  .book-header-cover {
+    height: 2.5rem;
+    padding: 1.75rem 1rem 0.1rem 1rem;
+  }
+  .book-img-header {
+    width: 100%;
+    height: 52px;
+  }
+  .book-img-icon-1 {
+    width: 1.5rem;
+    margin: 0px 1px 0px 1px;
+    vertical-align: middle;
+  }
+  .book-img-icon-2 {
+    width: 1.75rem;
+    margin: 0px 2px 0px 6px;
+    vertical-align: bottom;
+  }
+  .book-header {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* Ipad devices (768px and up) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  /*For font-size = 9pts,
+9 * 1.5 = 0.84
+rounding off 0.84 to nearest even number = 0.8px
+*/
+  :root {
+    /*1.4*/
+    --font-10pt-doublepage: 0.88rem;
+    --font-11pt-doublepage: 0.96rem;
+    --font-12pt-doublepage: 1rem;
+    --font-13pt-doublepage: 1.13rem;
+    --font-14pt-doublepage: 1.22rem;
+    --font-19pt-doublepage: 1.66rem;
+    --font-20pt-doublepage: 1.75rem;
+    --font-21pt-doublepage: 1.83rem;
+    --font-25pt-doublepage: 2.19rem;
+    --font-32pt-doublepage: 2.8rem;
+    --font-41pt-doublepage: 3.6rem;
+    --font-80pt-doublepage: 7.2rem;
+  }
+  .avatar {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  .title-box {
+    padding: 1rem;
+    height: 1.25rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .title-box-double {
+    padding: 1rem;
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+  }
+  .book-header-cover {
+    height: 3.5rem;
+    padding: 1rem 1.5rem 0.1rem 1.5rem;
+  }
+  .book-img-header {
+    width: 100%;
+    height: 60px;
+  }
+  .book-img-icon-1 {
+    width: 2rem;
+    margin: 0px 2px 0px 2px;
+  }
+  .book-img-icon-2 {
+    width: 2rem;
+    margin: 0px 3px 0px 9px;
+  }
+  .book-header {
+    margin-bottom: 3rem;
+  }
+  .avatar-double {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
+
+/* Ipad devices (768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  :root {
+    /*1.5*/
+    --font-10pt-doublepage: 0.93rem;
+    --font-11pt-doublepage: 1rem;
+    --font-12pt-doublepage: 1.12rem;
+    --font-13pt-doublepage: 1.2rem;
+    --font-14pt-doublepage: 1.31rem;
+    --font-19pt-doublepage: 1.78rem;
+    --font-20pt-doublepage: 1.87rem;
+    --font-21pt-doublepage: 1.96rem;
+    --font-25pt-doublepage: 2.34rem;
+    --font-32pt-doublepage: 3rem;
+    --font-41pt-doublepage: 3.84rem;
+    --font-80pt-doublepage: 7.68rem;
+  }
+  .title-box-double {
+    padding: 1rem 1.5rem 1rem 1rem;
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+  }
+  .avatar-double {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .page-footer {
+    height: 3.2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .page-footer {
+    margin: 3rem 0 3rem 0;
+  }
+  .right-page-border {
+    border-top: 2px solid rgba(220, 220, 220);
+  }
+}
+
+.font-10pt-doublepage {
+  font-size: var(--font-10pt-doublepage);
+}
+.font-11pt-doublepage {
+  font-size: var(--font-11pt-doublepage);
+}
+.font-12pt-doublepage {
+  font-size: var(--font-12pt-doublepage);
+}
+
+.font-13pt-doublepage {
+  font-size: var(--font-13pt-doublepage);
+}
+
+.font-14pt-doublepage {
+  font-size: var(--font-14pt-doublepage);
+}
+
+.font-19pt-doublepage {
+  font-size: var(--font-20pt-doublepage);
+}
+
+.font-20pt-doublepage {
+  font-size: var(--font-20pt-doublepage);
+}
+
+.font-21pt-doublepage {
+  font-size: var(--font-21pt-doublepage);
+}
+
+.font-25pt-doublepage {
+  font-size: var(--font-25pt-doublepage);
+}
+
+.font-32pt-doublepage {
+  font-size: var(--font-32pt-doublepage);
+}
+.font-41pt-doublepage {
+  font-size: var(--font-41pt-doublepage);
+}
+.font-80pt-doublepage {
+  font-size: var(--font-80pt-doublepage);
+}

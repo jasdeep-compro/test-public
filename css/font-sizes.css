@@ -1,0 +1,124 @@
+:root {
+     /* Font size variables */
+     --base-font-size: 16;
+     --font-device-val: 1.1;
+
+    /* font-sizes 1.1 */
+    --font-10pt-doublepage: calc(1rem * ((10 * var(--font-device-val)) / var(--base-font-size)));
+    --font-11pt-doublepage: calc(1rem * ((11 * var(--font-device-val)) / var(--base-font-size)));
+    --font-12pt-doublepage: calc(1rem * ((12 * var(--font-device-val)) / var(--base-font-size)));
+    --font-13pt-doublepage: calc(1rem * ((13 * var(--font-device-val)) / var(--base-font-size)));
+    --font-14pt-doublepage: calc(1rem * ((14 * var(--font-device-val)) / var(--base-font-size)));
+    --font-15pt-doublepage: calc(1rem * ((15 * var(--font-device-val)) / var(--base-font-size)));
+    --font-16pt-doublepage: calc(1rem * ((16 * var(--font-device-val)) / var(--base-font-size)));
+    --font-19pt-doublepage: calc(1rem * ((19 * var(--font-device-val)) / var(--base-font-size)));
+    --font-20pt-doublepage: calc(1rem * ((20 * var(--font-device-val)) / var(--base-font-size)));
+    --font-21pt-doublepage: calc(1rem * ((21 * var(--font-device-val)) / var(--base-font-size)));
+    --font-22pt-doublepage: calc(1rem * ((22 * var(--font-device-val)) / var(--base-font-size)));
+    --font-25pt-doublepage: calc(1rem * ((25 * var(--font-device-val)) / var(--base-font-size)));
+    --font-26pt-doublepage: calc(1rem * ((26 * var(--font-device-val)) / var(--base-font-size)));
+    --font-32pt-doublepage: calc(1rem * ((32 * var(--font-device-val)) / var(--base-font-size)));
+    --font-36pt-doublepage: calc(1rem * ((36 * var(--font-device-val)) / var(--base-font-size)));
+    --font-41pt-doublepage: calc(1rem * ((41 * var(--font-device-val)) / var(--base-font-size)));
+    --font-80pt-doublepage: calc(1rem * ((80 * var(--font-device-val)) / var(--base-font-size)));
+    --font-107pt-doublepage: calc(1rem * ((107 * var(--font-device-val)) / var(--base-font-size))); 
+}
+
+
+/* Mobile devices (576px and down) */
+@media only screen and (max-width: 576px) {
+
+    :root {
+        /* 1 */
+        --font-device-val: 1;
+    }
+}
+
+/* Ipad devices (768px and up) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    :root {
+        /*1.3*/
+        --font-device-val: 1.3;
+    }
+
+}
+
+/* Ipad devices (768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1152px) {
+    :root {
+        /*1.6*/
+        --font-device-val: 1.6;
+    }
+
+}
+
+.font-10pt-doublepage {
+    font-size: var(--font-10pt-doublepage);
+}
+
+.font-11pt-doublepage {
+    font-size: var(--font-11pt-doublepage);
+}
+
+.font-12pt-doublepage {
+    font-size: var(--font-12pt-doublepage);
+}
+
+.font-13pt-doublepage {
+    font-size: var(--font-13pt-doublepage);
+}
+
+.font-14pt-doublepage {
+    font-size: var(--font-14pt-doublepage);
+}
+
+.font-15pt-doublepage {
+    font-size: var(--font-15pt-doublepage);
+}
+
+.font-16pt-doublepage {
+    font-size: var(--font-16pt-doublepage);
+}
+
+.font-19pt-doublepage {
+    font-size: var(--font-20pt-doublepage);
+}
+
+.font-20pt-doublepage {
+    font-size: var(--font-20pt-doublepage);
+}
+
+.font-21pt-doublepage {
+    font-size: var(--font-21pt-doublepage);
+}
+
+.font-22pt-doublepage {
+    font-size: var(--font-22pt-doublepage);
+}
+
+.font-25pt-doublepage {
+    font-size: var(--font-25pt-doublepage);
+}
+
+.font-26pt-doublepage {
+    font-size: var(--font-26pt-doublepage);
+}
+
+.font-32pt-doublepage {
+    font-size: var(--font-32pt-doublepage);
+}
+.font-36pt-doublepage {
+    font-size: var(--font-36pt-doublepage);
+}
+
+.font-41pt-doublepage {
+    font-size: var(--font-41pt-doublepage);
+}
+
+.font-80pt-doublepage {
+    font-size: var(--font-80pt-doublepage);
+}
+.font-107pt-doublepage {
+    font-size: var(--font-107pt-doublepage);
+}
